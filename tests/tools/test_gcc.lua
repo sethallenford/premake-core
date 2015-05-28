@@ -197,7 +197,7 @@
 	function suite.cflags_onOptimizeDebug()
 		optimize "Debug"
 		prepare()
-		test.contains({ "-Og" }, gcc.getcflags(cfg))
+		test.contains({ "-O" }, gcc.getcflags(cfg))
 	end
 
 
