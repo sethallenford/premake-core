@@ -19,6 +19,11 @@
 #include <sys/sysctl.h>
 #endif
 
+#ifdef PREMAKE_NO_BUILTIN_SCRIPTS
+const char* PREMAKE_VERSION = "bootstrap";
+const char* PREMAKE_COMMIT = "---";
+#endif
+
 #define ERROR_MESSAGE  "Error: %s\n"
 
 
@@ -229,6 +234,8 @@ int premake_init(lua_State* L)
 	registerModules(L);
 #endif
 
+	printf("Premake %s (%s), a build script generator.\n%s\n", PREMAKE_VERSION, PREMAKE_COMMIT, PREMAKE_COPYRIGHT);
+	printf("%s %s\n\n", LUA_VERSION, LUA_COPYRIGHT);
 	return OKAY;
 }
 

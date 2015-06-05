@@ -11,9 +11,8 @@
 
 #include <stdlib.h>
 
-#define PREMAKE_VERSION        "5.0.0-dev"
-#define PREMAKE_COPYRIGHT      "Copyright (C) 2002-2017 Jason Perkins and the Premake Project"
-#define PREMAKE_PROJECT_URL    "https://github.com/premake/premake-core/wiki"
+#define PREMAKE_COPYRIGHT      "Copyright (C) 2002-2017 Jason Perkins, Blizzard Entertainment and the Premake Project"
+#define PREMAKE_PROJECT_URL    "https://ghosthub.corp.blizzard.net/premake/premake-core/wiki"
 
 /* Identify the current platform I'm not sure how to reliably detect
  * Windows but since it is the most common I use it as the default */
@@ -186,6 +185,8 @@ typedef struct
 	size_t               length;
 } buildin_mapping;
 
+extern const char* PREMAKE_VERSION;
+extern const char* PREMAKE_COMMIT;
 extern const buildin_mapping builtin_scripts[];
 extern void  registerModules(lua_State* L);
 
