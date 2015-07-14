@@ -542,6 +542,8 @@
 			"C90",                 -- DEPRECATED
 			"C99",                 -- DEPRECATED
 			"C11",                 -- DEPRECATED
+
+			"NoLibSysDir",         -- disable adding /usr/lib on linux
 		},
 		aliases = {
 			FatalWarnings = { "FatalWarnings", "FatalCompileWarnings", "FatalLinkWarnings" },
