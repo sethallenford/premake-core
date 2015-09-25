@@ -1,20 +1,23 @@
 # PREMAKE 5 (core)
-<img src="https://github.com/premake/premake-core/wiki/linux-widget.jpeg" width="24" height="24"/> [![Build Status](https://travis-ci.org/premake/premake-core.svg?branch=master)](https://travis-ci.org/premake/premake-core)
- <img src="https://github.com/premake/premake-core/wiki/windows-widget.jpeg" width="24" height="24"/> [![Build status](https://ci.appveyor.com/api/projects/status/lc9g332y2lqvel8h?svg=true)](https://ci.appveyor.com/project/PremakeOrganization/premake-core)
+<img src="https://premake.github.io/premake-logo.png" width="200" height="200" />
 
-<img src="http://premake.github.io/premake-logo.png" width="200" height="200" />
+|     | VS2015 | MacOSX | Centos6 | CentOS7 | Ubuntu |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| AutoCI | [![Build Status](https://autoci.corp.blizzard.net/autoci/badges/premake/premake-core/master-windows)](https://ci.corp.blizzard.net/job/premake-premake-core-master) | [![Build Status](https://autoci.corp.blizzard.net/autoci/badges/premake/premake-core/master-osx)](https://ci.corp.blizzard.net/job/premake-premake-core-master) | [![Build Status](https://autoci.corp.blizzard.net/autoci/badges/premake/premake-core/master-centos6)](https://ci.corp.blizzard.net/job/premake-premake-core-master)| [![Build Status](https://autoci.corp.blizzard.net/autoci/badges/premake/premake-core/master-centos7)](https://ci.corp.blizzard.net/job/premake-premake-core-master) | [![Build Status](https://autoci.corp.blizzard.net/autoci/badges/premake/premake-core/master-ubuntu)](https://ci.corp.blizzard.net/job/premake-premake-core-master) |
 
 Premake is a command line utility which reads a scripted definition of a software project and, most commonly, uses it to generate project files for toolsets like Visual Studio, Xcode, or GNU Make. Built-in and Third-Party [Modules](https://github.com/premake/premake-core/wiki/Modules) add support for even more toolsets.
 
-Find out in detail [what Premake is](https://github.com/premake/premake-core/wiki/What-Is-Premake) and how to use it in the [wiki](https://github.com/premake/premake-core/wiki).
+Find out in detail [what Premake is](https://github.com/premake/premake-core/wiki/What-Is-Premake) and how to use it in the [wiki](https://ghosthub.corp.blizzard.net/blizzard/premake/wiki).
 
 ### Get started
 
-* [Download Premake](http://premake.github.io/download.html)
-* [Read the wiki](https://github.com/premake/premake-core/wiki) to find out how to get your project up and running with Premake.
+* [Download Premake](http://packageserver.corp.blizzard.net/premake)
+* [Read the wiki](https://ghosthub.corp.blizzard.net/premake/premake-core/wiki) to find out how to get your project up and running with Premake.
 
+### Blizzard Mailing list
+* [#Premake Discussions](mailto:PremakeDiscussions@blizzard.com)
 
-### News and Community
+### News and OSS Community
 
 * Check the official [Github project](https://github.com/premake/premake-core) for the latest developments
 * For questions about using Premake and authoring project scripts, please ask on [StackOverflow, adding the #premake tag to your question](http://stackoverflow.com/questions/tagged/premake).
@@ -22,7 +25,7 @@ Find out in detail [what Premake is](https://github.com/premake/premake-core/wik
 
 ### Report isssues
 
-Something not working quite as expected? Do you need a feature that has not been implemented yet? Check the [issue tracker](https://github.com/premake/premake-core/issues) and add a new one if your problem is not already listed. Please try to provide a detailed description of your problem, including the steps to reproduce it.
+Something not working quite as expected? Do you need a feature that has not been implemented yet? Check the [issue tracker](https://ghosthub.corp.blizzard.net/premake/premake-core/issues) and add a new one if your problem is not already listed. Please try to provide a detailed description of your problem, including the steps to reproduce it.
 
 ### Contribute
 

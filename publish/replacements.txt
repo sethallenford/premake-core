@@ -1,0 +1,11 @@
+https://ghosthub.corp.blizzard.net/premake/premake-core==>https://github.com/blizzard/premake-core
+git@ghosthub.corp.blizzard.net:premake/module==>https://github.com/blizzard/premake
+ghosthub.corp.blizzard.net==>github.com
+packageserver.corp.blizzard.net
+autoci.corp.blizzard.net
+ci.corp.blizzard.net
+corp.blizzard.net
+package.battle.net
+PremakeDiscussions@blizzard.com
+PremakeSupport@blizzard.com
+
