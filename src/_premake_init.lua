@@ -1621,6 +1621,12 @@
 
 	newoption
 	{
+		trigger = "profile",
+		description = "Run with profiler enabled"
+	}
+
+	newoption
+	{
 		trigger = "interactive",
 		description = "Interactive command prompt"
 	}
