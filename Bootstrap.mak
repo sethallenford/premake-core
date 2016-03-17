@@ -94,6 +94,8 @@ windows-base: $(SRC)
 	$(SILENT) if exist .\build rmdir /s /q .\build
 	$(SILENT) if exist .\obj rmdir /s /q .\obj
 	if not exist build\bootstrap (mkdir build\bootstrap)
+	cl /Fo.\build\bootstrap\ /Fe.\build\bootstrap\test_x64.exe .\publish\test_x64.c
+	.\build\bootstrap\test_x64.exe
 	cl /Fo.\build\bootstrap\ /Fe.\build\bootstrap\premake_bootstrap.exe /DPREMAKE_NO_BUILTIN_SCRIPTS /I"$(LUA_DIR)" /I"$(LUASHIM_DIR)" user32.lib ole32.lib advapi32.lib $**
 	.\build\bootstrap\premake_bootstrap.exe embed
 	.\build\bootstrap\premake_bootstrap --to=build/bootstrap $(MSDEV)
@@ -103,4 +105,4 @@ windows: windows-base
 	devenv .\build\bootstrap\Premake5.sln /Build Release
 
 windows-msbuild: windows-base
-	msbuild /p:Configuration=Release /p:Platform=Win32 .\build\bootstrap\Premake5.sln
+	msbuild /p:Configuration=Release /p:Platform=x64 .\build\bootstrap\Premake5.sln

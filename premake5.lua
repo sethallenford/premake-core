@@ -58,6 +58,7 @@
 
 	newoption {
 		trigger = "to",
+		default = "build",
 		value   = "path",
 		description = "Set the output location for the generated files"
 	}
@@ -91,6 +92,7 @@
 --
 
 	solution "Premake5"
+		platforms { 'x64' }
 		configurations { "Release", "Debug" }
 		location ( _OPTIONS["to"] )
 
@@ -103,9 +105,6 @@
 		if not _OPTIONS["no-curl"] then
 			defines { "CURL_STATICLIB", "PREMAKE_CURL"}
 		end
-
-		filter { 'system:windows' }
-			platforms   { 'x86', 'x64' }
 
 		filter "configurations:Debug"
 			defines     "_DEBUG"
