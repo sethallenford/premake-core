@@ -135,6 +135,14 @@ static const luaL_Reg http_functions[] = {
 	{ "download",  http_download },
 	{ NULL, NULL }
 };
+
+static const luaL_Reg telemetry_functions[] = {
+	{ "send", telemetry_send },
+	{ "wait", telemetry_wait },
+	{ "gethostname", telemetry_gethostname },
+	{ "getusername", telemetry_getusername },
+	{ NULL, NULL }
+};
 #endif
 
 #ifdef PREMAKE_COMPRESSION
@@ -192,6 +200,7 @@ int premake_init(lua_State* L)
 
 #ifdef PREMAKE_CURL
 	luaL_register(L, "http",     http_functions);
+	luaL_register(L, "telemetry", telemetry_functions);
 #endif
 
 #ifdef PREMAKE_COMPRESSION
@@ -207,6 +216,9 @@ int premake_init(lua_State* L)
 
 	lua_pushstring(L, PREMAKE_VERSION);
 	lua_setglobal(L, "_PREMAKE_VERSION");
+
+	lua_pushstring(L, PREMAKE_COMMIT);
+	lua_setglobal(L, "_PREMAKE_COMMIT");
 
 	lua_pushstring(L, PREMAKE_COPYRIGHT);
 	lua_setglobal(L, "_PREMAKE_COPYRIGHT");
