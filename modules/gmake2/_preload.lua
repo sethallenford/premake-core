@@ -12,7 +12,7 @@
 	local project = p.project
 
 	newaction {
-		trigger         = "gmake2",
+		trigger         = "gmake",
 		shortname       = "Alternative GNU Make",
 		description     = "Generate GNU makefiles for POSIX, MinGW, and Cygwin",
 		toolset         = "gcc",
@@ -66,5 +66,5 @@
 --
 
 	return function(cfg)
-		return (_ACTION == "gmake2")
+		return (_ACTION == "gmake")
 	end

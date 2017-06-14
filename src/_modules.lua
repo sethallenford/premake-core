@@ -5,7 +5,6 @@
 --
 
 	return {
-		"gmake",
 		"vstudio",
 		"codelite",
 		"gmake2",
