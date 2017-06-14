@@ -247,7 +247,7 @@
 		prepare { "ldFlags", "libs" }
 		test.capture [[
   ALL_LDFLAGS += $(LDFLAGS) -L../libs -s
-  LIBS += -lSomeLib
+  LIBS += ../libs/SomeLib
 		]]
 	end
 
@@ -260,11 +260,11 @@
 -- is stripped
 --
 
-	function suite.onExternalLibraryWithPath()
+	function suite.onExternalLibraryWithPath2()
 		location "MyProject"
 		links { "libs/SomeLib-1.1" }
 		prepare { "libs", }
 		test.capture [[
-  LIBS += -lSomeLib-1.1
+  LIBS += ../libs/SomeLib-1.1
 		]]
 	end
