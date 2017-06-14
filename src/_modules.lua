@@ -9,4 +9,9 @@
 		"codelite",
 		"gmake2",
 		"autoconf",
+		"xcode-blizzard",
+		"packagemanager",
+		"blizzard",
+		"consoles",
+		"android",
 	}

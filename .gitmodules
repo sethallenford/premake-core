@@ -1,0 +1,15 @@
+[submodule "modules/packagemanager"]
+	path = modules/packagemanager
+	url = git@ghosthub.corp.blizzard.net:premake/module-packagemanager.git
+[submodule "modules/blizzard"]
+	path = modules/blizzard
+	url = git@ghosthub.corp.blizzard.net:premake/module-blizzard.git
+[submodule "modules/consoles"]
+	path = modules/consoles
+	url = git@ghosthub.corp.blizzard.net:premake/module-consoles.git
+[submodule "modules/blz_xcode"]
+	path = modules/xcode-blizzard
+	url = git@ghosthub.corp.blizzard.net:premake/module-xcode.git
+[submodule "modules/android"]
+	path = modules/android
+	url = git@ghosthub.corp.blizzard.net:premake/module-android.git
