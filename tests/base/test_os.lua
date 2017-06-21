@@ -37,7 +37,7 @@
 	end
 
 	function suite.findheader_stdheaders()
-		if not os.istarget("windows") and not os.istarget("macosx") then
+		if os.istarget("linux") then
 			test.istrue(os.findheader("stdlib.h"))
 		end
 	end
