@@ -4,6 +4,8 @@
 -- Copyright (c) 2016 Jason Perkins and the Premake project
 --
 
+--[[
+
 	local p = premake
 
 	-- only declare the suite as a test if http.get is an existing method.
@@ -66,3 +68,5 @@
 			test.fail(err);
 		end
 	end
+
+]]
