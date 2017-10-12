@@ -76,7 +76,7 @@ jobs:
     - !!bash
       - git clean -ffxd
       - make -f Bootstrap.mak osx
-      - bin/release/premake5 test
+      - bin/release/premake5 test --insecure
       - python publish/autoci_publish.py --platform=darwin
       - cp bin/release/premake5 bin/release/premake5_mac
   releaseFiles:
